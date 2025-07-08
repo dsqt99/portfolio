@@ -1,0 +1,302 @@
+%-------------------------
+% Sơ yếu lý lịch bằng Latex
+% Giấy phép : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[vietnamese]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+\usepackage[utf8]{inputenc}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+%----------TÙY CHỌN FONT----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{ragged2e}
+
+\pagestyle{fancy}
+\fancyhf{} % xóa tất cả header và footer
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Điều chỉnh lề
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Định dạng các phần
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Đảm bảo PDF được tạo có thể đọc được bằng máy/ATS
+\pdfgentounicode=1
+
+%-------------------------
+% Các lệnh tùy chỉnh
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheadingobj}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingedu}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \small#5 & \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  SƠ YẾU LÝ LỊCH BẮT ĐẦU TỪ ĐÂY  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------TIÊU ĐỀ----------
+\begin{center}
+    {\Huge \textbf{Đỗ Mạnh Hải}} \\ \vspace{1pt}
+    \vspace{5pt}
+    \small \raisebox{-0.2\height}\faEnvelope\ \href{mailto:haimanhdo1999@gmail.com}{haimanhdo1999@gmail.com} $|$ 
+    \raisebox{-0.1\height}\faPhone\ (+84)949109533 $|$ 
+    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/dsqt1999/}{ linkedin.com/in/dsqt1999}  ~
+    \newline   
+    \small Hà Nội, Việt Nam 
+    \vspace{-10pt}
+    
+\end{center}
+
+%-----------MỤC TIÊU-----------
+\section{Mục tiêu nghề nghiệp}
+  \resumeSubHeadingListStart
+    \resumeSubheadingobj
+      {Luôn nỗ lực học hỏi, phát triển và trau dồi kiến thức, công nghệ mới nhất trong lĩnh vực AI, tận dụng chuyên môn của mình để phát triển các giải pháp sáng tạo nhằm giải quyết các thách thức của doanh nghiệp.}
+     \resumeSubHeadingListEnd
+
+%-----------HỌC VẤN-----------
+\section{Học vấn}
+  \resumeSubHeadingListStart
+    \resumeSubheadingedu
+      {Đại học Bách khoa Hà Nội (HUST)}{Hà Nội, Việt Nam}
+      {Kỹ sư Kỹ thuật Điều khiển và Tự động hóa;}{08/2017 -- 04/2022} 
+      {\textbf{Chuyên ngành}: Kỹ thuật điều khiển và hệ thống thông minh}
+
+    \resumeSubheading
+      {Trường THPT Chuyên Vĩnh Phúc} {Vĩnh Phúc, Việt Nam}
+      {Chuyên Tin học;} {08/2014 – 06/2017}
+      \resumeItem{Á khôi Kỳ thi học sinh giỏi Tin học cấp tỉnh lớp 11 và 12;}
+      \resumeItem{Kỳ thi THPT Quốc gia: \textbf{28.85/30}} 
+     \resumeSubHeadingListEnd
+
+%%---------------KINH NGHIỆM LÀM VIỆC---------------------
+\section{Kinh nghiệm làm việc}
+  \resumeSubHeadingListStart
+   \resumeSubheading{Oxiitek}{Hà Nội, Việt Nam}{Kỹ sư AI}{08/2024 -- Hiện tại}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Nền tảng Tự động hóa Doanh nghiệp:} Thiết kế và triển khai các giải pháp tự động hóa toàn diện sử dụng n8n, thực hiện quy trình CRM tự động, quy trình phê duyệt, hệ thống thu thập phản hồi khách hàng và tạo task Jira liền mạch cho đội phát triển.}
+        \resumeItem{\textbf{AI Voice Bot cho Loa thông minh:} Phát triển voice bot thông minh dựa trên agent cho phép tương tác ngôn ngữ tự nhiên để quản lý và điều khiển thiết bị nhà thông minh với khả năng AI đối thoại tiên tiến.}
+        \resumeItem{\textbf{VoiceQA - Hệ thống Đánh giá Chất lượng Cuộc gọi AI:} Thiết kế và phát triển hệ thống đánh giá chất lượng cuộc gọi toàn diện được hỗ trợ bởi AI sử dụng Gemini 2.5 Flash để phân tích thông minh các cuộc gọi dịch vụ khách hàng. Triển khai RESTful API với FastAPI, tích hợp AWS S3 để lưu trữ âm thanh, cơ sở dữ liệu vector FAISS cho tìm kiếm ngữ nghĩa, và AWS Transcribe để xử lý speech-to-text.}
+        \resumeItem{\textbf{MCP cho Tích hợp IoT:} Phát triển server MCP (Model Context Protocol) toàn diện cho tích hợp hệ sinh thái API văn phòng, cho phép điều khiển và quản lý thiết bị IoT liền mạch thông qua LLM Agents với khả năng phản hồi thời gian thực.}
+        \resumeItem{\textbf{Nền tảng Tự động hóa Dịch vụ Khách hàng:} Xây dựng nền tảng tự động hóa end-to-end với tính năng chuyển đổi speech-to-text, tóm tắt cuộc hội thoại thông minh và tạo ticket hỗ trợ tự động với phân tích ngữ cảnh.}
+        \resumeItem{\textbf{Giải pháp Xử lý Tài liệu OCR:} Triển khai các giải pháp Nhận dạng Ký tự Quang học sẵn sàng sản xuất để xử lý tài liệu, thực hiện che giấu thông tin cá nhân bảo vệ quyền riêng tư và đếm nhãn sản phẩm tự động trong hình ảnh triển lãm.}
+        \resumeItem{\textbf{AWS Data Pipeline và Nền tảng Phân tích:} Thiết kế và triển khai kiến trúc data pipeline ETL toàn diện quản lý luồng dữ liệu từ DynamoDB đến Data Lake và lưu trữ S3. Điều phối quy trình xử lý dữ liệu tự động sử dụng AWS Glue với cronjobs được lên lịch để đồng bộ dữ liệu thời gian thực.}
+      \resumeItemListEnd
+     
+    \resumeSubheading
+      {Job3s}{Hà Nội, Việt Nam}
+      {Kỹ sư AI}{ 04/2023 -- 08/2024}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Hệ thống Tạo Nội dung LLM:} Phát triển hệ thống tạo nội dung thông minh sử dụng Large Language Models để tạo mô tả công việc tự động và tối ưu hóa CV, cải thiện chất lượng và tính nhất quán của nội dung tuyển dụng.}
+        \resumeItem{\textbf{Pipeline Web Scraping Đa trang:} Phát triển cơ sở hạ tầng data pipeline mạnh mẽ cho web scraping đa trang sử dụng Beautiful Soup, Scrapy và Selenium, xử lý và lưu trữ datasets quy mô lớn lên AWS S3 với xác thực dữ liệu tự động.}
+        \resumeItem{\textbf{Engine Gợi ý Nghề nghiệp AI:} Tạo engine gợi ý nghề nghiệp được hỗ trợ bởi AI sử dụng ElasticSearch để ghép cặp ứng viên-công việc thông minh và thuật toán dự đoán lương, nâng cao đáng kể hiệu quả và độ chính xác của quy trình tuyển dụng.}
+        \resumeItem{\textbf{Hệ thống Phân tích CV:} Xây dựng hệ thống phân tích CV toàn diện trích xuất 20+ trường có cấu trúc (thông tin cá nhân, học vấn, kinh nghiệm, kỹ năng) thông qua kỹ thuật xử lý PDF và OCR hybrid sử dụng VietOCR để nhận dạng văn bản tiếng Việt.}
+        \resumeItem{\textbf{Hệ thống đối sánh CV-JD:} Triển khai hệ thống ghép cặp tương đồng ngữ nghĩa tính toán mức độ liên quan CV-mô tả công việc sử dụng PhoBERT-base embeddings và thuật toán cosine similarity, đạt được xếp hạng ứng viên độ chính xác cao.}
+     \resumeItemListEnd
+     
+    \resumeSubheading
+      {VinBigData, Tập đoàn Vingroup}{Hà Nội, Việt Nam}
+      {Kỹ sư NLP}{ 10/2022 -- 04/2023}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Dataset Phân tích Cảm xúc theo Khía cạnh:} Xây dựng dataset phân tích cảm xúc dựa trên cực tính khía cạnh quy mô lớn cho đánh giá khách hàng Vinpearl, triển khai pipeline gán nhãn dữ liệu toàn diện, tiền xử lý và đánh giá mô hình Vietnamese DeBERTa.}
+        \resumeItem{\textbf{Nghiên cứu ABSA với Context-Aware Attention:} Tiến hành nghiên cứu tiên tiến về Aspect-Based Sentiment Analysis so sánh BERT, BERT-pair, DeBERTa và cơ chế Context-aware attention trên datasets cảm xúc tiếng Việt.}
+        \resumeItem{\textbf{Chatbot Sản phẩm được hỗ trợ bởi GPT:} Thiết kế và tiền xử lý dataset thông tin sản phẩm Shopee 400K+ cho hệ thống chatbot được hỗ trợ bởi GPT, cho phép truy xuất thông tin sản phẩm hiệu quả và giải quyết truy vấn khách hàng.}
+     \resumeItemListEnd
+     
+    \resumeSubheading
+      {Viện VinBigData}{Hà Nội, Việt Nam}
+      {Học viên Đào tạo Kỹ sư AI}{ 07/2022 -- 10/2022}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Chương trình Chuyên môn AI:} Hoàn thành chương trình chuyên môn AI chuyên sâu bao gồm machine learning tiên tiến, deep learning, computer vision và xử lý ngôn ngữ tự nhiên với các dự án thực tế trong ngành.}
+        \resumeItem{\textbf{Phát triển Chuyên môn:} Nâng cao năng lực chuyên môn trong làm việc nhóm, lãnh đạo kỹ thuật và kỹ năng thuyết trình thông qua chương trình đào tạo toàn diện được tài trợ bởi doanh nghiệp.}
+        \resumeItem{\textbf{Dự án AI Đa lĩnh vực:} Thực hiện nhiều dự án AI bao gồm phân đoạn và phân loại polyp y tế, phát hiện bạo lực trong video streams và hệ thống hỏi đáp thông minh, thể hiện tính linh hoạt trên các lĩnh vực AI.}
+     \resumeItemListEnd
+    
+    \resumeSubheading
+      {Smart Technology for Industry (ST4I)}{Hà Nội, Việt Nam}
+      {Kỹ sư Computer Vision - Thực tập sinh}{05/2021 -- 07/2021}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tối ưu hóa Template Matching:} Tối ưu hóa thuật toán template matching trên các nền tảng Python, C++ và C\#, đạt được cải thiện đáng kể về tốc độ xử lý và độ chính xác cho các ứng dụng xử lý dữ liệu công nghiệp.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {HUST}{Hà Nội, Việt Nam}
+      {Trợ lý Nghiên cứu} {05/2020 -- 04/2022}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Nghiên cứu ML/CV:} Tiến hành nghiên cứu tiên tiến trong machine learning, computer vision và phương pháp deep learning, đóng góp vào tiến bộ trong thuật toán phát hiện cạnh và hệ thống nhận dạng khuôn mặt/đối tượng.}
+        \resumeItem{\textbf{Hệ thống Dự đoán SpO2:} Phát triển hệ thống dự đoán SpO2 thời gian thực không tiếp xúc sử dụng computer vision dựa trên camera và kỹ thuật machine learning cho ứng dụng giám sát sức khỏe từ xa.}
+      \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+
+%-----------DỰ ÁN-----------
+\section{Dự án}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Hệ thống Phân loại Banner Quảng cáo được hỗ trợ bởi AI} $|$ \emph{TensorFlow, OpenCV, FastAPI, PostgreSQL}}{01/2025 -- Hiện tại}
+      \resumeItemListStart
+        \resumeItem{\textbf{Pipeline Computer Vision:} Thiết kế và phát triển hệ thống deep learning toàn diện để phân loại tự động banner quảng cáo từ nội dung video thang máy sử dụng kiến trúc ResNet50/101/152 và MobileNetV3Large với kỹ thuật transfer learning.}
+        \resumeItem{\textbf{Xử lý Video Tiên tiến:} Triển khai trích xuất frame thông minh sử dụng OpenCV và FFmpeg với phát hiện thay đổi cảnh dựa trên SSIM, đạt được lựa chọn frame tối ưu để nhận dạng banner với độ chính xác 95\%.}
+        \resumeItem{\textbf{API Sẵn sàng Sản xuất:} Xây dựng backend FastAPI có thể mở rộng với xử lý bất đồng bộ, tích hợp PostgreSQL và triển khai Docker hỗ trợ phân tích video thời gian thực và ánh xạ chiến dịch để theo dõi hiệu quả quảng cáo.}
+        \resumeItem{\textbf{Data Augmentation \& Tối ưu hóa:} Thiết kế pipeline data augmentation tùy chỉnh bao gồm random resize, hiệu ứng ánh sáng và biến đổi đặc thù cảnh để mô phỏng điều kiện ánh sáng thang máy thực tế, cải thiện độ mạnh mẽ của mô hình 15\%.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{WrenAI - Nền tảng Natural Language to SQL Doanh nghiệp} $|$ \emph{Python, FastAPI, Qdrant, BigQuery, Docker}}{04/2025 -- Hiện tại}
+      \resumeItemListStart
+        \resumeItem{\textbf{Kiến trúc AI Đa tenant:} Dẫn dắt phát triển dịch vụ AI đa tenant cấp doanh nghiệp hỗ trợ xử lý dữ liệu cô lập, cấu hình LLM đặc thù tenant và xác thực API an toàn với cô lập dữ liệu hoàn toàn sử dụng collections cơ sở dữ liệu vector Qdrant.}
+        \resumeItem{\textbf{Tích hợp Nguồn Dữ liệu Động:} Phát triển tích hợp BigQuery liền mạch với khám phá schema tự động, tạo SQL động và profiling dữ liệu thông minh sử dụng phân tích được hỗ trợ bởi AI cho kết nối data warehouse doanh nghiệp.}
+        \resumeItem{\textbf{Tạo Query được Nâng cao bởi RAG:} Triển khai pipeline Retrieval-Augmented Generation tiên tiến chuyển đổi truy vấn ngôn ngữ tự nhiên thành SQL được tối ưu hóa với xử lý nhận thức ngữ cảnh, hỗ trợ nhiều nhà cung cấp LLM và đạt được độ chính xác truy vấn 90\%.}
+        \resumeItem{\textbf{Kiến trúc Microservices:} Thiết kế và triển khai hệ sinh thái microservices có thể mở rộng bao gồm dịch vụ AI, thành phần UI, data engine và launcher với điều phối Docker, hỗ trợ 100+ tenant đồng thời với thời gian phản hồi dưới giây.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Nền tảng Chatbot RAG Doanh nghiệp} $|$ \emph{Django, Python, Docker, RAG, LLM}}{2023 -- 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Xử lý Tài liệu Thông minh:} Thiết kế hệ thống chatbot RAG (Retrieval-Augmented Generation) toàn diện cho phép tương tác ngôn ngữ tự nhiên với kho tài liệu doanh nghiệp. Triển khai upload tài liệu thông minh, tổ chức theo chủ đề và khả năng tìm kiếm nhanh trên các bộ sưu tập tài liệu lớn.}
+        \resumeItem{\textbf{Hỗ trợ Đa ngôn ngữ:} Phát triển nền tảng AI đối thoại với xử lý ngôn ngữ tự nhiên tiên tiến hỗ trợ tiếng Việt và tiếng Anh, có tính năng phản hồi nhận thức ngữ cảnh và tóm tắt cuộc hội thoại thông minh để nâng cao trải nghiệm người dùng.}
+        \resumeItem{\textbf{Kiến trúc Web Có thể Mở rộng:} Xây dựng ứng dụng web Django sẵn sàng sản xuất với containerization Docker, có tính năng xác thực người dùng, bảng quản trị để quản lý nội dung và giao diện web responsive được tối ưu hóa cho cả môi trường phát triển và sản xuất.}
+        \resumeItem{\textbf{Tích hợp Doanh nghiệp:} Thiết kế kiến trúc modular hỗ trợ tích hợp dễ dàng với các hệ thống doanh nghiệp hiện có, pipeline triển khai tự động và tài liệu API toàn diện để áp dụng tổ chức liền mạch.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Bộ Tự động hóa Dịch vụ Khách hàng AI} $|$ \emph{Python, NLP, FastAPI, PostgreSQL, Docker}}{01/2025 -- Hiện tại}
+      \resumeItemListStart
+        \resumeItem{\textbf{Chatbot Hỗ trợ Khách hàng Thông minh:} Phát triển chatbot dịch vụ khách hàng được hỗ trợ bởi AI toàn diện sử dụng kỹ thuật NLP tiên tiến để giải quyết truy vấn tự động, phân loại ticket và định tuyến thông minh đến các kênh hỗ trợ phù hợp với tỷ lệ giải quyết liên hệ đầu tiên 85\%.}
+        \resumeItem{\textbf{Bot Thu thập Thông tin Hàng không:} Phát triển chatbot chuyên biệt cho ngành hàng không thu thập thông tin khai báo chuyến bay, xác thực tuân thủ quy định và tự động hóa quy trình nhập dữ liệu cho cơ quan hàng không với xác thực thời gian thực và xử lý lỗi.}
+        \resumeItem{\textbf{Tạo Báo cáo PDF Tự động:} Xây dựng hệ thống thông minh để tạo báo cáo PDF toàn diện cho quy trình đăng ký bay drone nông nghiệp, bao gồm điền form tự động, kiểm tra tuân thủ quy định và tích hợp chữ ký số với cơ sở dữ liệu hàng không chính phủ.}
+        \resumeItem{\textbf{Tích hợp Đa kênh:} Triển khai triển khai chatbot omnichannel hỗ trợ giao diện web, ứng dụng di động và tích hợp API với hệ thống CRM hiện có, cho phép trải nghiệm khách hàng liền mạch trên tất cả các điểm tiếp xúc.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------KỸ NĂNG-----------
+\section{Năng lực cá nhân}
+ \begin{itemize}[leftmargin=0.12in]
+  \achievementItem{\textbf{Ngôn ngữ Lập trình}: Python, C++, C\#, JavaScript, HTML, CSS, SQL}
+  \achievementItem{\textbf{Framework AI/ML}: TensorFlow/Keras, PyTorch, LangChain, LangIndex, Hugging Face Transformers, OpenAI API}
+  \achievementItem{\textbf{Framework Web}: FastAPI, Django, Flask, RESTful APIs, Uvicorn}
+  \achievementItem{\textbf{Cơ sở Dữ liệu \& Lưu trữ}: PostgreSQL, MySQL, MongoDB, FAISS Vector Database, Qdrant, AWS S3, ElasticSearch}
+  \achievementItem{\textbf{Cloud \& DevOps}: AWS (S3, Glue, Athena, QuickSight, Transcribe, DynamoDB), Docker, Docker Compose, Microservices}
+  \achievementItem{\textbf{Chuyên môn AI/ML}: RAG (Retrieval-Augmented Generation), NLP, Computer Vision, OCR, Semantic Search, LLM Integration}
+  \achievementItem{\textbf{Xử lý Dữ liệu}: ETL Pipelines, Data Lake Architecture, Business Intelligence, PDF Processing, Audio Processing}
+  \achievementItem{\textbf{Quản lý Dự án}: Git, GitHub, GitLab, Trello, Confluence, Agile, CI/CD}
+  \achievementItem{\textbf{Khác}: Linux, Postman, n8n Automation, IoT Integration, MCP (Model Context Protocol)}
+\end{itemize}
+ \vspace{-16pt}
+
+\end{document}

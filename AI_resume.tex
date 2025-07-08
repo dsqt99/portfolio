@@ -1,0 +1,321 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{ragged2e}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheadingedu}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \small#5 & \textbf{\small #6} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% \resumePublicationHeading[2]{
+%     \item
+%     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+%       \small #1 \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \textbf{Hai Do Manh}} \\ \vspace{1pt}
+    \vspace{5pt}
+    \small \raisebox{-0.2\height}\faEnvelope\ \href{mailto:haimanhdo1999@gmail.com}{haimanhdo1999@gmail.com} $|$ 
+    \raisebox{-0.1\height}\faPhone\ (+84)949109533 $|$ 
+    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/dsqt1999/}{ linkedin.com/in/dsqt1999}  ~
+    % \raisebox{-0.2\height}\faGithub\ 
+    \newline   
+    \small Hanoi, VietNam 
+    \vspace{-10pt}
+    
+\end{center}
+
+%-----------OBJECTIVE-----------
+\section{Objective}
+  \resumeSubHeadingListStart
+    \resumeSubheadingobj
+      {Always strive to learn, develop and cultivate the latest knowledge and technology in AI, leveraging my expertise to develop innovative solutions to address enterprise challenges.}
+     \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingedu
+      {Hanoi University of Science and Technology (HUST)}{Hanoi, Vietnam}
+      {Engineer of Control Engineering and Automation;}{Aug 2017 -- Apr 2022} 
+      {\textbf{Specialization}: Control techniques and intelligent systems}
+
+    \resumeSubheading
+      {Vinh Phuc High School for the Gifted} {Vinh Phuc, Vietnam}
+      {Specialized in Information Technology;} {Aug 2014 – Jun 2017}
+      \resumeItem{Runner-up in the Provincial High School Informatics Contest for Grades 11 and 12;}
+      \resumeItem{National high school exam: \textbf{28.85/30}} 
+     \resumeSubHeadingListEnd
+%%---------------Experience---------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+   \resumeSubheading{Oxiitek}{Hanoi, VietNam}{AI Engineer}{Aug 2024 -- Present}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Enterprise Automation Platform:} Architected and deployed comprehensive automation solutions using n8n, implementing automated CRM workflows, approval processes, customer feedback collection systems, and seamless Jira task generation for development teams.}
+        \resumeItem{\textbf{AI Voice Bot for Smart Speakers:} Engineered an intelligent agent-based voice bot enabling natural language interaction for smart home device management and control with advanced conversational AI capabilities.}
+        \resumeItem{\textbf{VoiceQA - AI Call Quality Evaluation System:} Architected and developed a comprehensive AI-powered call quality evaluation system utilizing Gemini 2.5 Flash for intelligent analysis of customer service calls. Implemented RESTful API with FastAPI, integrated AWS S3 for audio storage, FAISS vector database for semantic search, and AWS Transcribe for speech-to-text processing. The system provides automated scoring against predefined quality criteria with real-time audio processing capabilities and Docker-based deployment infrastructure.}
+        \resumeItem{\textbf{MCP for IoT Integration:} Developed a comprehensive MCP (Model Context Protocol) server for office API ecosystem integration, enabling seamless IoT device control and management through LLM Agents with real-time responsiveness.}
+        \resumeItem{\textbf{Customer Service Automation Platform:} Built an end-to-end automation platform featuring speech-to-text transcription, intelligent conversation summarization, and automated support ticket generation with contextual analysis.}
+        \resumeItem{\textbf{OCR Document Processing Solutions:} Deployed production-ready Optical Character Recognition solutions for document processing, implementing privacy-preserving personal information redaction and automated product label counting in exhibition imagery.}
+        \resumeItem{\textbf{AWS Data Pipeline and Analytics Platform:} Designed and implemented comprehensive ETL data pipeline architecture managing data flow from DynamoDB to Data Lake and S3 storage. Orchestrated automated data processing workflows using AWS Glue with scheduled cronjobs for real-time data synchronization. Built analytical datasets using Amazon Athena for SQL-based querying and created interactive business intelligence dashboards with AWS QuickSight, enabling data-driven decision making and real-time performance monitoring across enterprise operations.}
+      \resumeItemListEnd
+     
+    \resumeSubheading
+      {Job3s}{Hanoi, VietNam}
+      {AI Engineer}{ Apr 2023 -- Aug 2024}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{LLM Content Generation System:} Developed an intelligent content generation system utilizing Large Language Models for automated job description creation and resume optimization, improving recruitment content quality and consistency.}
+        \resumeItem{\textbf{Multi-Site Web Scraping Pipeline:} Engineered robust data pipeline infrastructure for multi-site web scraping using Beautiful Soup, Scrapy, and Selenium, processing and storing large-scale datasets to AWS S3 with automated data validation.}
+        \resumeItem{\textbf{AI Career Recommendation Engine:} Created AI-powered career recommendation engine using ElasticSearch for intelligent candidate-job matching and salary prediction algorithms, significantly enhancing recruitment process efficiency and accuracy.}
+        \resumeItem{\textbf{Resume Parsing System:} Built comprehensive resume parsing system extracting 20+ structured fields (personal information, education, experience, skills) through hybrid PDF processing and OCR techniques using VietOCR for Vietnamese text recognition.}
+        \resumeItem{\textbf{Semantic Similarity Matching:} Implemented semantic similarity matching system calculating resume-job description relevance using PhoBERT-base embeddings and cosine similarity algorithms, achieving high-precision candidate ranking.}
+     \resumeItemListEnd
+     
+    \resumeSubheading
+      {VinBigData, Vingroup Company}{Hanoi, VietNam}
+      {NLP Engineer}{ Oct 2022 -- Apr 2023}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Aspect-Based Sentiment Analysis Dataset:} Constructed large-scale aspect polarity-based sentiment analysis dataset for Vinpearl customer reviews, implementing comprehensive data labeling, preprocessing pipelines, and Vietnamese DeBERTa model evaluation.}
+        \resumeItem{\textbf{ABSA Research with Context-Aware Attention:} Conducted advanced research on Aspect-Based Sentiment Analysis comparing BERT, BERT-pair, DeBERTa, and Context-aware attention mechanisms on Vietnamese sentiment datasets.
+        \vspace{-4pt}
+            \resumeItemListStart{\textbf{Research Impact:} Context-aware attention demonstrated 6\% performance improvement over traditional self-attention in ABSA tasks across VLSP16 and Vinpearl datasets.}
+            \resumeItemListEnd
+        }
+        \resumeItem{\textbf{GPT-Powered Product Chatbot:} Designed and preprocessed 400K+ Shopee product information dataset for GPT-powered chatbot system, enabling efficient product information retrieval and customer query resolution.}
+     \resumeItemListEnd
+     
+    \resumeSubheading
+      {VinBigData Institute}{Hanoi, VietNam}
+      {AI Engineer Training Scholar}{ Jul 2022 -- Oct 2022}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{AI Specialization Program:} Completed intensive AI specialization program covering advanced machine learning, deep learning, computer vision, and natural language processing with hands-on industry projects.}
+        \resumeItem{\textbf{Professional Development:} Enhanced professional competencies in teamwork, technical leadership, and presentation skills through comprehensive corporate-sponsored training curriculum.}
+        \resumeItem{\textbf{Multi-Domain AI Projects:} Delivered multiple AI projects including medical polyps segmentation and classification, violence detection in video streams, and intelligent question-answering systems, demonstrating versatility across AI domains.}
+     \resumeItemListEnd
+    
+    \resumeSubheading
+      {Smart Technology for Industry (ST4I)}{Hanoi, Vietnam}
+      {Computer Vision Engineer - Intern}{May 2021 -- Jul 2021}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Template Matching Optimization:} Optimized template matching algorithms across Python, C++, and C\# platforms, achieving significant improvements in processing speed and accuracy for industrial data processing applications.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {HUST}{Hanoi, VietNam}
+      {Research Assistant} {May 2020 -- April 2022}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{ML/CV Research:} Conducted cutting-edge research in machine learning, computer vision, and deep learning methodologies, contributing to advancements in edge detection algorithms and facial/object recognition systems.}
+        \resumeItem{\textbf{SpO2 Prediction System:} Developed non-contact real-time SpO2 prediction system using camera-based computer vision and machine learning techniques for remote health monitoring applications.}
+      \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{AI-Powered Advertisement Banner Classification System} $|$ \emph{TensorFlow, OpenCV, FastAPI, PostgreSQL}}{Jan 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Computer Vision Pipeline:} Architected and developed a comprehensive deep learning system for automatic classification of advertisement banners from elevator video content using ResNet50/101/152 and MobileNetV3Large architectures with transfer learning techniques.}
+        \resumeItem{\textbf{Advanced Video Processing:} Implemented intelligent frame extraction using OpenCV and FFmpeg with SSIM-based scene change detection, achieving optimal frame selection for banner identification with 95\% accuracy.}
+        \resumeItem{\textbf{Production-Ready API:} Built scalable FastAPI backend with asynchronous processing, PostgreSQL integration, and Docker deployment supporting real-time video analysis and campaign mapping for advertising effectiveness tracking.}
+        \resumeItem{\textbf{Data Augmentation \& Optimization:} Designed custom data augmentation pipeline including random resize, light spot effects, and scene-specific transformations to simulate real elevator lighting conditions, improving model robustness by 15\%.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{WrenAI - Enterprise Natural Language to SQL Platform} $|$ \emph{Python, FastAPI, Qdrant, BigQuery, Docker}}{April 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Multi-Tenant AI Architecture:} Led development of enterprise-grade multi-tenant AI service supporting isolated data processing, tenant-specific LLM configurations, and secure API authentication with complete data isolation using Qdrant vector database collections.}
+        \resumeItem{\textbf{Dynamic Data Source Integration:} Engineered seamless BigQuery integration with automatic schema discovery, dynamic SQL generation, and intelligent data profiling using AI-powered analysis for enterprise data warehouse connectivity.}
+        \resumeItem{\textbf{RAG-Enhanced Query Generation:} Implemented advanced Retrieval-Augmented Generation pipeline converting natural language queries to optimized SQL with context-aware processing, supporting multiple LLM providers (OpenAI, Azure OpenAI, Ollama) and achieving 90\% query accuracy.}
+        \resumeItem{\textbf{Microservices Architecture:} Designed and deployed scalable microservices ecosystem including AI service, UI components, data engine, and launcher with Docker orchestration, supporting 100+ concurrent tenants with sub-second response times.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Enterprise RAG Chatbot Platform} $|$ \emph{Django, Python, Docker, RAG, LLM}}{2023 -- 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Intelligent Document Processing:} Architected comprehensive RAG (Retrieval-Augmented Generation) chatbot system enabling natural language interaction with enterprise document repositories. Implemented intelligent document upload, organization by topics, and fast search capabilities across large document collections.}
+        \resumeItem{\textbf{Multi-Language Support:} Developed conversational AI platform with advanced natural language processing supporting Vietnamese and English languages, featuring context-aware responses and intelligent conversation summarization for enhanced user experience.}
+        \resumeItem{\textbf{Scalable Web Architecture:} Built production-ready Django web application with Docker containerization, featuring user authentication, admin panel for content management, and responsive web interface optimized for both development and production environments.}
+        \resumeItem{\textbf{Enterprise Integration:} Designed modular architecture supporting easy integration with existing enterprise systems, automated deployment pipelines, and comprehensive API documentation for seamless organizational adoption.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{AI Customer Service Automation Suite} $|$ \emph{Python, NLP, FastAPI, PostgreSQL, Docker}}{Jan 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Intelligent Customer Support Chatbot:} Developed comprehensive AI-powered customer service chatbot utilizing advanced NLP techniques for automated query resolution, ticket classification, and intelligent routing to appropriate support channels with 85\% first-contact resolution rate.}
+        \resumeItem{\textbf{Aviation Information Collection Bot:} Engineered specialized chatbot for aviation industry collecting flight declaration information, validating regulatory compliance, and automating data entry processes for aviation authorities with real-time validation and error handling.}
+        \resumeItem{\textbf{Automated PDF Report Generation:} Built intelligent system for generating comprehensive PDF reports for agricultural drone flight registration processes, including automated form filling, regulatory compliance checking, and digital signature integration with government aviation databases.}
+        \resumeItem{\textbf{Multi-Channel Integration:} Implemented omnichannel chatbot deployment supporting web interfaces, mobile applications, and API integrations with existing CRM systems, enabling seamless customer experience across all touchpoints.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+
+\section{Personal Competences}
+%  \begin{itemize}[leftmargin=0.12in]
+%   \achievementItem{ \textbf{Languages}: Vietnamese (native), English}
+%   \achievementItem{\textbf{Programming Languages}: C++ (prior experience) , Python (proficient)}
+%   \achievementItem{\textbf{Frameworks}: Pytorch (proficient), Tensorflow/Keras (prior experience)}
+%   \achievementItem{\textbf{Tools}: Git, Latex, MS Office}
+% \end{itemize}
+%  \vspace{-16pt}
+ \begin{itemize}[leftmargin=0.12in]
+  \achievementItem{\textbf{Programming Languages}: Python, C++, C\#, JavaScript, HTML, CSS, SQL}
+  \achievementItem{\textbf{AI/ML Frameworks}: TensorFlow/Keras, PyTorch, LangChain, LangIndex, Hugging Face Transformers, OpenAI API}
+  \achievementItem{\textbf{Web Frameworks}: FastAPI, Django, Flask, RESTful APIs, Uvicorn}
+  \achievementItem{\textbf{Databases \& Storage}: PostgreSQL, MySQL, MongoDB, FAISS Vector Database, Qdrant, AWS S3, ElasticSearch}
+  \achievementItem{\textbf{Cloud \& DevOps}: AWS (S3, Glue, Athena, QuickSight, Transcribe, DynamoDB), Docker, Docker Compose, Microservices}
+  \achievementItem{\textbf{AI/ML Specializations}: RAG (Retrieval-Augmented Generation), NLP, Computer Vision, OCR, Semantic Search, LLM Integration}
+  \achievementItem{\textbf{Data Processing}: ETL Pipelines, Data Lake Architecture, Business Intelligence, PDF Processing, Audio Processing}
+  \achievementItem{\textbf{Project Management}: Git, GitHub, GitLab, Trello, Confluence, Agile, CI/CD}
+  \achievementItem{\textbf{Others}: Linux, Postman, n8n Automation, IoT Integration, MCP (Model Context Protocol)}
+\end{itemize}
+ \vspace{-16pt}
+
+\end{document}
